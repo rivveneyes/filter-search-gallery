@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery search</title>
+    <!-- ===this is the baguetteBox links needed==== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.css"> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js" async></script> 
+    <!-- ====baguetteBox==== -->
+    
+    <script src="scripts/searchFilter.js"></script>
+    
+    
+    <script src="scripts/scrap.js"></script>
+   
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <input class="search" type="search" name="search" id="search" onkeyup="myFunction()"  placeholder="Search">
+    </nav>
+    <div  class="gallery">
+
+        <ul id="listPhotos">
+            <li> 
+                <a href="photos/01.jpg" data-caption="aaa">aaa
+                    <img src="photos/thumbnails/01.jpg" alt="AAA" data-caption="aaa">
+                </a>
+            </li>
+
+            <li>
+                <a href=photos/02.jpg data-caption="bbb">bbb
+                    <img src="photos/thumbnails/02.jpg" alt="bbb" data-caption="bbb">
+                </a>
+            </li>
+
+            <li>
+                <a href=photos/03.jpg  data-caption="ccc">ccc
+                    <img src="photos/thumbnails/03.jpg" alt="ccc" data-caption="bbb">
+                </a>
+            </li>
+            
+    </div>
+
+</body>
+</html>

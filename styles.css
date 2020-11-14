@@ -1,0 +1,32 @@
+ul,li{
+    list-style-type: none;
+}
+
+*{
+
+ box-sizing: border-box;
+}
+.gallery{
+    padding-top: 30px;
+    background-color: wheat;
+    color: red;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    padding-left: 10px;
+}
+.gallery img{
+
+height: 200px;
+}
+
+nav{
+    background-color: black;
+    text-align: center;
+}
+/* space nested selectors */
+nav .search{
+    
+    text-align: center;
+}
