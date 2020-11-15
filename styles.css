@@ -1,32 +1,35 @@
 ul,li{
+    margin: auto;
     list-style-type: none;
 }
 
 *{
-
  box-sizing: border-box;
 }
-.gallery{
-    padding-top: 30px;
+body{
+    margin: 0;
     background-color: wheat;
-    color: red;
-    height: auto;
+}
+.container{
+    text-align: center;
+}
+.gallery{
+    padding-top: 100px;
+    /* height: auto; */
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 10px;
     padding-left: 10px;
+    margin: 0;
 }
-.gallery img{
 
+.gallery img{
 height: 200px;
 }
 
-nav{
-    background-color: black;
-    text-align: center;
-}
-/* space nested selectors */
-nav .search{
-    
-    text-align: center;
+.search{
+    margin-top: 20px;
+    height: 50px;
+    width: 600px;
+
 }

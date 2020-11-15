@@ -1,56 +1,22 @@
-
-
-
 function myFunction() {
-    var phoTos, input, filter, ul, li, a, i, txtValue, data;
+    var input, filter, ul, li, img, i, txtValue;
     input = document.getElementById("search");
+    // console.log(input.value.toUpperCase());
     filter = input.value.toUpperCase();
-    console.log(filter);
+    // change input of user to upper case
     ul = document.getElementById("listPhotos");
-    console.log(ul);
-    phoTos = ul.getElementsByTagName("img");
-    console.log(phoTos);
-    data = document.q
-    // for (i = 0; i < phoTos.length; i++) {
-        a = phoTos[2].getElementsByTagName("img");
-        txtValue = a.alt ;
-        console.log(textValue);
+        // console.log(ul);
+    li = ul.getElementsByTagName("li");
+    // console.log(li);===length of 2 from zero index
+    for (i = 0; i < li.length; i++) {
+        img = li[i].getElementsByTagName("img")[0];
+        // console.log(img.alt);
+        txtValue = img.alt;
+        //txtValue is pulled from the <img>alt="asd"
+         if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
 }
-//         if (txtValue.toUpperCase().indexOf(filter) > -1) {
-//             li[i].style.display = "";
-//         } else {
-//             li[i].style.display = "none";
-//         }
-//     }
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function Newfunction() {
-//     var input, filter, ul, li, a, i, txtValue, img;
-//     input = document.getElementById("search");
-//     filter = input.value.toUpperCase();
-//     console.log(filter);
-//     ul = document.getElementById("listPhotos");
-//     console.log(ul);
-//     img= document.getElementsByTagName("img")
-//     console.log(img);
-    
-
-// }
