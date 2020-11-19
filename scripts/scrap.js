@@ -1,4 +1,6 @@
 
+    
+    // pulled bag_baguette box from github changes gallery photo fade in and out 
     window.addEventListener('load', function() {
         baguetteBox.run('.gallery');
       });
@@ -26,3 +28,6 @@
             }
         }
     }
+
+
+    
