@@ -1,11 +1,17 @@
-ul,li{
+*{
+    box-sizing: border-box;
+   }
+a,.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  ul,li{
     margin: auto;
     list-style-type: none;
+    border: 6px solid transparent;
 }
 
-*{
- box-sizing: border-box;
-}
 body{
     margin: 0;
     background-color: wheat;
@@ -39,3 +45,7 @@ height: 200px;
     min-width: 90%;
     
 }
+
+ li :focus{
+    border: 6px solid red;
+} 
